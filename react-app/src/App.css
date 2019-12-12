@@ -1,0 +1,25 @@
+.App{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Card {
+  border: 1px black solid;
+  background-color: rgb(8, 8, 8);
+  width: 50%;
+  margin-left: 30%;
+  text-align: center;
+}
+
+.cardImage{
+  width: 85%;
+  height: 85%;
+}
+
+.cardInfo{
+  width: 100%;
+  color: silver;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
