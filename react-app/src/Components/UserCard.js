@@ -12,7 +12,7 @@ const User = props => {
       <img src={props.user.avatar_url} alt="pic" />
       <div>
         <div>
-          <h1 >{props.user.name}</h1>
+          <h1 >{props.user.login}</h1>
           <em >{props.user.bio}</em>
         </div>
         <div >
