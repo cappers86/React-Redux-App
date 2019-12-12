@@ -3,20 +3,19 @@ import { connect } from "react-redux";
 import { getUser } from "../state/actionTypes";
 
 const User = props => {
-  console.log(props.user);
   useEffect(() => {
     props.getUser();
   }, []);
   return (
-    <div >
-      <img src={props.user.avatar_url} alt="pic" />
-      <div>
+    <div className='Card'>
+      <img className='cardImage' src={props.user.avatar_url} alt="pic" />
+      <div className='cardInfo'>
         <div>
-          <h1 >{props.user.login}</h1>
-          <em >{props.user.bio}</em>
+          <h1 className='login' >{props.user.login}</h1>
+          <em className='bio'>{props.user.bio}</em>
         </div>
         <div >
-          <p>Followers:{props.user.followers}</p>
+          <p className='followers'>Followers:{props.user.followers}</p>
         </div>
       </div>
     </div>
